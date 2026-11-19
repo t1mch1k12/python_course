@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Успешный вход</title>
+  <style>body { background: #0b1220; color: white; font: 18px Arial, sans-serif; text-align: center; padding: 80px 20px; } button { padding: 12px 22px; cursor: pointer; }</style>
+</head>
+<body>
+  <h1>Авторизация прошла успешно!</h1>
+  <p>Добро пожаловать, {{ username }}.</p>
+  <form action="{{ url_for('logout') }}" method="POST"><button type="submit">Выйти</button></form>
+</body>
+</html>
