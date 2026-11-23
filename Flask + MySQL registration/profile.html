@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Профиль</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="panel">
+    <h1>Регистрация успешна!</h1>
+    <p>Добро пожаловать, <strong>{{ username }}</strong>.</p>
+    <p class="muted">Ваш профиль создан и данные сохранены в MySQL.</p>
+    <a class="button-link" href="{{ url_for('index') }}">На главную</a>
+    <a href="{{ url_for('logout') }}">Выйти</a>
+  </main>
+</body>
+</html>
